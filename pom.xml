@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>tesla-app</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1</version>
 	
-	<name>maven-web-application</name>
+	<name>tesla-app</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>tesla-app Project for Java Project</description>
 	<organization>
 		<name>Landmark Technologies</name>
 		<url>http://landmarktechnologies.com/</url>
@@ -20,7 +20,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://174.129.77.123:9000/job/Tesla%20app1/3/console:9000/</sonar.host.url>
+		<sonar.host.url>http://18.215.165.172:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,18 +96,18 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Tesla app Releases Nexus Repository</name>
-	      <url>http://44.203.254.207:8081/repository/tesla-app-fe-release//</url> 
+	      <url>http://54.211.130.209:8081/repository/tesla-app-fe-release/</url> 
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://44.203.254.207:8081/repository/tesla-app-fe-snapshots//</url>
+	      <url>http://54.211.130.209:8081/repository/tesla-app-fe-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
 	<build>
-		<finalName>tesla</finalName>
+		<finalName>tesla-app</finalName>
 		
 		<plugins>
 			<plugin>
@@ -127,7 +127,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/tesla-app</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -140,7 +140,7 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>tesla-app</wtpContextName>
 				</configuration>
 			</plugin>
 			
